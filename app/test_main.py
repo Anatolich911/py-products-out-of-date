@@ -30,4 +30,3 @@ def test_outdated_products(mocked_datetime: mock.MagicMock) -> None:
 
     mocked_datetime.date.today.return_value = datetime.date(2022, 1, 31)
     assert outdated_products(products) == []
-    
